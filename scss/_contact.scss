@@ -1,0 +1,52 @@
+.contact {
+  height: 100vh;
+  padding-top: 40vh;
+  background-image: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.2)
+    ),
+    url("../img/model-1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: $white-color;
+  align-content: center;
+  & > h1 {
+    text-align: center;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: $white-color;
+    margin-bottom: 1rem;
+  }
+  .communcation-way {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    .email,
+    .phone,
+    .address {
+      font-size: 1.2rem;
+      h2 {
+        font-weight: 400;
+      }
+      p {
+        font-weight: 600;
+        color: $second-color;
+      }
+    }
+  }
+  .icons {
+    text-align: center;
+    cursor: pointer;
+    i {
+      @include translate-ease;
+      margin: 1.5rem 0.5rem;
+      &:hover {
+        color: $second-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+
+@import "config";
+@import "mixins";
+@import "home";
+@import "menu";
+@import "about";
+@import "project";
+@import "contact";
+@import "response";
+
+footer{
+    .icons{
+        @include position(fixed,auto,auto,1rem,1rem);
+        color:$white-color;
+        i{
+            padding:0.4rem;
+            @include translate-ease;
+            &:hover{
+                color:$second-color;
+            }
+        }
+    }
+    .copyright{
+        @include position(fixed,auto,1rem,1rem,auto);
+        color:$white-color;
+    }
+}
+
+
+// header{
+//     display: flex;
+//     justify-content: space-between;
+//     @include position(fixed,0,0,auto,0);
+//     width: 100%;
+//     font-size: 1.5rem;
+//     padding: 0.5rem;
+//     .nav{
+//         .navbar{
+//             display: flex;
+//             text-transform:uppercase;
+//             .navbar-item{
+//                 list-style: none;
+//                 padding: 1.5rem 1.25rem;
+//                 a{
+//                     @include translate-ease;
+//                     &:hover{
+//                         color:$second-color;
+//                     }
+//                 }
+//             }
+//         }    
+//     }
+// }

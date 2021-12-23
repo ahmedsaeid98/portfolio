@@ -1,0 +1,82 @@
+.about{
+    .bio{
+        background-image: linear-gradient(
+        to right,
+        rgba($primary-color, 0.9),
+        rgba($primary-color, 0.2)
+        ),
+        url("../img/model-1.jpg");
+        background-size: cover;
+        height: 50vh;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .bio-content{
+        width: 80%;
+        padding: 0 10px;
+        h1{
+            color:$second-color;
+            font-weight: 400;
+            padding-bottom: 0.8rem;
+            font-size: 2.5rem;
+        }
+        p{
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+            color:$white-color;
+            line-height: 25px;
+        }
+    }
+
+    .jobs{
+        background-color: rgb(39, 39, 39);
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .job{
+            width: 60%;
+            background-color: rgb(65, 65, 65);
+            margin-top: 2rem;
+            padding: 0.5rem;
+            border-bottom: 5px solid $second-color;
+            h2{
+                font-weight: 400;
+                margin:0.3rem 0px;
+                color:$second-color;
+                font-size: 1.5rem;
+            }
+            h3{
+                font-weight: 400;
+                margin:0.3rem 0px;
+                color:$white-color;
+                font-size: 1.17rem;
+            }
+            h4{
+                font-weight: 400;
+                margin:0.3rem 0px;
+                color:$white-color;
+                font-size: 0.67rem;
+            }
+            p{
+                color:$white-color;
+            }
+        }
+        .job:last-of-type{
+            margin-bottom: 2rem;
+
+        }
+    }
+}
+.about-icons{
+    .icons{
+        display: flex;
+        flex-direction: column;
+    }
+    .copyright{
+        transform: rotate(90deg)translate(-60px,-50px);
+    }
+}

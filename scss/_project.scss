@@ -1,0 +1,99 @@
+.my-projects {
+  .header {
+    background-image: linear-gradient(
+        to right,
+        rgba($primary-color, 0.9),
+        rgba($primary-color, 0.2)
+      ),
+      url("../img/model-1.jpg");
+    background-size: cover;
+    height: 40vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 1.8rem;
+    h1 {
+      font-weight: w 400;
+      font-size: 3em;
+      color: $second-color;
+    }
+  }
+
+  .projects {
+    background-color: rgb(39, 39, 39);
+    height: 60vh;
+    overflow: auto;
+    padding-bottom: 2rem;
+    .project-contant {
+      margin: 2rem auto 0 auto;
+      width: 70vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .project {
+      width: 30%;
+      padding: 1rem;
+      cursor: pointer;
+      .content {
+        position: relative;
+        border-bottom: 5px solid $second-color;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        overflow: hidden;
+        .layout {
+          background-color: rgba($second-color, 0.9);
+          position: absolute;
+          top: 100%;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          color: $primary-color;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          @include translate-ease;
+          opacity: 0;
+          .eye,
+          .githup {
+            display: flex;
+            opacity: 0;
+            h6 {
+              padding: 1px 5px;
+              font-size: 1rem;
+              font-weight: 400;
+            }
+            @include translate-ease;
+            &:hover {
+              color: $white-color;
+            }
+          }
+        }
+      }
+      &:hover {
+        .layout {
+          opacity: 0.9;
+          top: 0;
+          .eye,
+          .githup {
+            opacity: 1;
+            transition-delay: 0.5;
+          }
+        }
+      }
+    }
+  }
+}
+.about-icons {
+  .icons {
+    display: flex;
+    flex-direction: column;
+  }
+  .copyright {
+    transform: rotate(90deg) translate(-60px, -50px);
+  }
+}
